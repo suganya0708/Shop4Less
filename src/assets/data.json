@@ -1,44 +1,19 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Headphone -1",
-             "category_id": 1,
-             "product_img": "img-path",
-             "description":"Product description goes here",
-             "price": 100,
-             "is_available": true,
-             "rating":4,
-             "reviews": 120,
-             "vendor_name": "Seller -1",
-             "warranty": 2
-          },
-          {
-            "id": 2,
-            "name": "Headphone -2",
-             "category_id": 2,
-             "product_img": "img-path",
-             "description":"Product description goes here",
-             "price": 120,
-             "is_available": true,
-             "rating":4.5,
-             "reviews": 150,
-             "vendor_name": "Seller -2",
-             "warranty": 3
-          },
-          {
-            "id": 3,
-            "name": "Headphone -3",
-             "category_id": 3,
-             "product_img": "img-path",
-             "description":"Product description goes here",
-             "price": 130,
-             "is_available": true,
-             "rating":4.8,
-             "reviews": 180,
-             "vendor_name": "Seller -3",
-             "warranty": 2
-          }
-    ]
-    
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -1,0 +1,91 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Polo Tshirts",
+             "category_id": 1,
+             "product_img": "http://localhost:4200/assets/1.jpg",
+             "description":"Product description goes here",
+             "price": 3500,
+             "is_available": true,
+             "rating":4,
+             "reviews": 120,
+             "vendor_name": "Seller -1",
+             "warranty": 2
+          },
+          {
+             "id": 2,
+             "productName": "Soccer Tshirts",
+             "category_id": 2,
+             "product_img": "http://localhost:4200/assets/2.jpg",
+             "description":"Product description goes here",
+             "price": 1150,
+             "is_available": true,
+             "rating":4.5,
+             "reviews": 150,
+             "vendor_name": "Seller -2",
+             "warranty": 3
+          },
+          {
+            "id": 3,
+            "productName": "casual Tshirts",
+             "category_id": 3,
+             "product_img": "http://localhost:4200/assets/3.jpg",
+             "description":"Product description goes here",
+             "price": 2500,
+             "is_available": true,
+             "rating":4.8,
+             "reviews": 180,
+             "vendor_name": "Seller -3",
+             "warranty": 2
+          },
+          {
+            "id": 4,
+            "productName": "Addidas Tshirts",
+             "category_id": 4,
+             "product_img": "http://localhost:4200/assets/4.jpg",
+             "description":"Product description goes here",
+             "price": 1300,
+             "is_available": true,
+             "rating":4.8,
+             "reviews": 4.2,
+             "vendor_name": "Seller -3",
+             "warranty": 2
+          },
+          {
+            "id": 5,
+            "productName": "Jockey Tshirts",
+             "category_id": 5,
+             "product_img": "http://localhost:4200/assets/5.jpg",
+             "description":"Product description goes here",
+             "price": 130,
+             "is_available": true,
+             "rating":4.8,
+             "reviews": 1800,
+             "vendor_name": "Seller -3",
+             "warranty": 2
+          },
+          {
+            "id": 6,
+            "productName": "Party Tshirts",
+             "category_id": 6,
+             "product_img": "http://localhost:4200/assets/6.jpg",
+             "description":"Product description goes here",
+             "price": 1500,
+             "is_available": true,
+             "rating":4.8,
+             "reviews": 180,
+             "vendor_name": "Seller -3",
+             "warranty": 2
+          }
+    ],
+    "categories":[
+      {"id":1, "categoryName": "Polo Tshirts"},
+      {"id":2, "categoryName": "Soccer Tshirts"},
+      {"id":3, "categoryName": "casual Tshirts"},
+      {"id":4, "categoryName": "Addidas Tshirts"},
+      {"id":5, "categoryName": "Jockey Tshirts"},
+      {"id":6, "categoryName": "Party Tshirts"}
+    ]
+    
+}
