@@ -10,13 +10,14 @@ import { ViewProductsByDateComponent } from './view-products-by-date/view-produc
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import {UpdateProductComponent } from './update-product/update-product.component'
 
-const routes: Routes = [{ path: '', component: ListAllProductsComponent },
+const routes: Routes = [
+{ path: '', component: ListAllProductsComponent },
 { path: 'create-products', component: CreateProductComponent },
 { path: 'products/:id', component: ViewProductComponent},
 { path: 'category/:id', component:  ViewProductsByCategoryComponent},
 { path: 'search', component: ViewProductsByDateComponent},
 { path: 'delete-product/:id', component:  DeleteProductComponent},
-{ path: 'update-product/:id', component: UpdateProductComponent},
+{ path: 'update-product/:id', component: UpdateProductComponent}
 
 ];
 

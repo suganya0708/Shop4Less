@@ -22,9 +22,6 @@ export class ProductsService {
     return this.httpClient.get<Category>(categoriesUrl);
   }
 
-
-
-
   createProduct(productBody): Observable<Product>{
     const producturl = 'http://localhost:3000/products';
     return this.httpClient.post<Product>(producturl, productBody);
@@ -43,7 +40,7 @@ export class ProductsService {
     return this.httpClient.delete<Product>(productUrl);
   }
   searchCategoryProducts(categoryId): Observable<Product>{
-    const productUrl = 'http://localhost:3000/products/category='+categoryId;
+    const productUrl = 'http://localhost:3000/products?categoryId='+categoryId;
     return this.httpClient.get<Product>(productUrl);
   }
   searchDateProducts(dateParam): Observable<Product>{

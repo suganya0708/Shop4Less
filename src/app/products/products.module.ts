@@ -9,6 +9,7 @@ import { UpdateProductComponent } from './update-product/update-product.componen
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import { ViewProductsByDateComponent } from './view-products-by-date/view-products-by-date.component';
 import { ViewProductsByCategoryComponent } from './view-products-by-category/view-products-by-category.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ViewProductsByCategoryComponent } from './view-products-by-category/vie
     ViewProductsByCategoryComponent],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    FormsModule
   ]
  
 })

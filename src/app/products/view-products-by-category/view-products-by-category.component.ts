@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Category } from 'src/app/site-framework/category';
+import { Product } from '../product';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-view-products-by-category',
@@ -8,13 +11,23 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ViewProductsByCategoryComponent implements OnInit {
 
-  searchCategory = '';
-  constructor(private activatedRoute: ActivatedRoute) { }
+  searchCategory: Category;
+  productList: Product;
+
+  constructor(private activatedRoute: ActivatedRoute,
+    private productsService: ProductsService) { }
 
   ngOnInit(): void {
-    this.activatedRoute.queryParams.subscribe(data =>{
-      this.searchCategory = data.category;
+    this.activatedRoute.params.subscribe(data =>{
+      this.searchCategory = data.id;
+
+     this.productsService.searchCategoryProducts(this.searchCategory).subscribe(categoryData =>{
+       this.productList = categoryData;
+     })
+
     });
+
+    
   }
 
 }
