@@ -18,7 +18,6 @@ const routes: Routes = [
 { path: 'search', component: ViewProductsByDateComponent},
 { path: 'delete-product/:id', component:  DeleteProductComponent},
 { path: 'update-product/:id', component: UpdateProductComponent}
-
 ];
 
 @NgModule({

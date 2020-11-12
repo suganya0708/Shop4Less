@@ -1,3 +1,75 @@
-<p>update-product works!</p>
+<form (ngSubmit)="updateProduct(updateProductForm)" #updateProductForm="ngForm">
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationServer01">Product Name</label>
+            <input type="text" class="form-control" [(ngModel)]="productDetails.productName" required
+                name="productName" ngModel>
 
-<p> Product Id: {{productId}}</p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationServer02">Category Id</label>
+            <input type="text" class="form-control" [(ngModel)]="productDetails.categoryId" required
+                name="categoryId" ngModel>
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer03">Description</label>
+            <textarea type="text" class="form-control" [(ngModel)]="productDetails.description" required
+                placeholder="Enter Product Description" name="description" ngModel>
+             </textarea>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label>Rating</label>
+            <select class="custome-select" required name="product_rating" ngModel>
+                <option selected vlaue="">choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label for="validationServer05">Product Price</label>
+            <input type="text" class="form-control" placeholder="" required name="product_price" ngModel>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <label>Is Available</label>
+            <select class="custome-select" required name="product_isavailable" ngModel>
+                <option selected vlaue="">choose...</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-3 mb-3">
+            <label for="validationServer06">Product Color</label>
+            <input type="text" class="form-control" required name="product_color" ngModel>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <label>Reviews</label>
+            <select class="custome-select" required name="product_reviews" ngModel>
+                <option selected vlaue="">choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Update form</button>
+</form>
