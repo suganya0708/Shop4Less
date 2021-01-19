@@ -9,13 +9,13 @@ import { Category } from '../category';
 })
 export class SideBarComponent implements OnInit {
 
-  categoryList: Category;
+ // categoryList: Category;
   constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productsService.getCategories().subscribe(data =>{
-    this.categoryList = data;
-    });
+   // this.productsService.getCategories().subscribe(data =>{
+    //this.categoryList = data;
+    //});
 
   }
 

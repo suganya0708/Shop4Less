@@ -14,10 +14,10 @@ export class CreateProductComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addNewProduct(form) {
+  /*addNewProduct(form) {
 
     let newProduct = {
-      id: 11,
+      id: 15,
       categoryId: form.product_category,
       productName: form.product_name,
       description: form.product_description,
@@ -34,5 +34,5 @@ export class CreateProductComponent implements OnInit {
       console.log(data);
 
     });
-  }
-}
+  */}
+

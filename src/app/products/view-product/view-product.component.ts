@@ -23,9 +23,9 @@ export class ViewProductComponent implements OnInit {
      this.productId = data.id;
      });
      
-     this.productsService.viewProduct(this.productId).subscribe(productDate =>{
-      this.productDetails = productDate;
-     });
+    //  this.productsService.viewProduct(this.productId).subscribe(productDate =>{
+    //   this.productDetails = productDate;
+    //  });
 
     }
 

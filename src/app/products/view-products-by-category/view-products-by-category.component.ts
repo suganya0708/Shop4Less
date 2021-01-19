@@ -21,9 +21,9 @@ export class ViewProductsByCategoryComponent implements OnInit {
     this.activatedRoute.params.subscribe(data =>{
       this.searchCategory = data.id;
 
-     this.productsService.searchCategoryProducts(this.searchCategory).subscribe(categoryData =>{
-       this.productList = categoryData;
-     })
+    //  this.productsService.searchCategoryProducts(this.searchCategory).subscribe(categoryData =>{
+    //    this.productList = categoryData;
+    //  })
 
     });
 

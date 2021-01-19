@@ -19,9 +19,9 @@ export class UpdateProductComponent implements OnInit {
     this.activatedRoute.params.subscribe(data=>{
         this.productId = data.id;
     
-    this.productsService.viewProduct(this.productId).subscribe(productData =>{
-      this.productDetails = productData;
-    })
+    // this.productsService.viewProduct(this.productId).subscribe(productData =>{
+    //   this.productDetails = productData;
+    // })
 
 
       });
@@ -44,7 +44,7 @@ export class UpdateProductComponent implements OnInit {
     
   };
 
-   this.productsService.updateProduct(this.productId, updateproduct)
-  }
+  //  this.productsService.updateProduct(this.productId, updateproduct)
+   }
 
 }

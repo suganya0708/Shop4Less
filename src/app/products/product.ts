@@ -1,13 +1,26 @@
 export interface Product {
-   createProduct(newProduct: { id: number; categoryId: any; productName: any; description: any; price: any; is_available: number; rating: any; reviews: any; color: any; });
-   productId: string;
-   productName : string;
-   rating: string;
-   price: number;
-   productImg: string;
-   categoryId: number;
-   isAvailable: boolean;
-   description: String;
-
+   createProduct(newProduct: {  id: number;
+      name:  string;
+      image: string;
+      price:  number;
+      description: string;
+      is_available:boolean,
+      quantity:number
+      brand:string;
+      color: string;
+      category_id: number;
+      rating: number; });
+  
+   id: number;
+   name:  string;
+   image: string;
+   price:  number;
+   description: string;
+   is_available:boolean,
+   quantity:number
+   brand:string;
+   color: string;
+   category_id: number;
+   rating: number;
    }
 
